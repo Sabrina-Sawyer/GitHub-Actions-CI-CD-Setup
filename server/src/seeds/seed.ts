@@ -10,6 +10,6 @@ db.once('open', async () => {
 
   await Question.insertMany(pythonQuestions);
 
-  console.log('Questions seeded!');
+  console.log('Questions seeded!!!');
   process.exit(0);
 });
