@@ -3,7 +3,7 @@ import Question from "../models/Question.js";
 import cleanDB from "./cleanDb.js";
 import fs from "fs";
 
-const pythonQuestions = JSON.parse(fs.readFileSync("./dist/seeds/pythonQuestions.json", 'utf-8'));
+const pythonQuestions = JSON.parse(fs.readFileSync("/dist/seeds/pythonQuestions.json", 'utf-8'));
 
 db.once('open', async () => {
   await cleanDB('Question', 'questions');
